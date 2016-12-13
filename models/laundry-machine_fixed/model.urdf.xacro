@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xi="http://www.w3.org/2001/XInclude" name="laundry-machine">
+  <macro name="laundry-machine" params="name parent *origin">
+    <gazebo>
+      <static>false</static>
+    </gazebo>
+    <link name="${name}_B0_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://laundry-machine/meshes/B0_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://laundry-machine/meshes/B0_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_B0_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_CAP_link">
+      <visual>
+        <origin xyz="0.64 -0.21 0.77" rpy="0 1.22173 0"/>
+        <geometry>
+          <mesh filename="model://laundry-machine/meshes/CAP_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.64 -0.21 0.77" rpy="0 1.22173 0"/>
+        <geometry>
+          <mesh filename="model://laundry-machine/meshes/CAP_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-09" ixy="-2.26312e-41" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_CAP_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_BUTTON_link">
+      <visual>
+        <origin xyz="0.6 0.24 0.93" rpy="0 1.0472 0"/>
+        <geometry>
+          <mesh filename="model://laundry-machine/meshes/BUTTON_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.6 0.24 0.93" rpy="0 1.0472 0"/>
+        <geometry>
+          <mesh filename="model://laundry-machine/meshes/BUTTON_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-09" ixy="5.66464e-43" ixz="-9.86076e-32" iyy="1e-09" iyz="0" izz="1e-09"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_BUTTON_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <joint name="${name}_root_parent_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${name}_B0_link"/>
+      <insert_block name="origin"/>
+    </joint>
+    <joint name="${name}_JOINT0" type="revolute">
+      <parent link="${name}_B0_link"/>
+      <child link="${name}_CAP_link"/>
+      <origin xyz="0.64 -0.21 0.77" rpy="0 1.22173 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="3.14159" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_JOINT0_trans">
+      <actuator name="${name}_JOINT0_motor"/>
+      <joint name="${name}_JOINT0"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_JOINT0">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_JOINT1" type="prismatic">
+      <parent link="${name}_B0_link"/>
+      <child link="${name}_BUTTON_link"/>
+      <origin xyz="0.6 0.24 0.93" rpy="0 1.0472 0 "/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-0.09" upper="0.09" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_JOINT1_trans">
+      <actuator name="${name}_JOINT1_motor"/>
+      <joint name="${name}_JOINT1"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_JOINT1">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+  </macro>
+</robot>

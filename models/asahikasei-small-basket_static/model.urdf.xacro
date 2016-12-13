@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xi="http://www.w3.org/2001/XInclude" name="asahikasei-small-basket">
+  <macro name="asahikasei-small-basket" params="name parent *origin">
+    <gazebo>
+      <static>false</static>
+    </gazebo>
+    <link name="${name}_BOX_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://asahikasei-small-basket/meshes/BOX_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://asahikasei-small-basket/meshes/BOX_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_BOX_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_RIGHT_link">
+      <visual>
+        <origin xyz="0 0.025 0.125" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://asahikasei-small-basket/meshes/RIGHT_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0.025 0.125" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://asahikasei-small-basket/meshes/RIGHT_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_RIGHT_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_LEFT_link">
+      <visual>
+        <origin xyz="0 -0.025 0.125" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://asahikasei-small-basket/meshes/LEFT_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 -0.025 0.125" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://asahikasei-small-basket/meshes/LEFT_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_LEFT_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <joint name="${name}_root_parent_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${name}_BOX_link"/>
+      <insert_block name="origin"/>
+    </joint>
+    <joint name="${name}_HANDLE-HINGE1" type="revolute">
+      <parent link="${name}_BOX_link"/>
+      <child link="${name}_RIGHT_link"/>
+      <origin xyz="0 0.025 0.125" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="3.14159" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_HANDLE-HINGE1_trans">
+      <actuator name="${name}_HANDLE-HINGE1_motor"/>
+      <joint name="${name}_HANDLE-HINGE1"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_HANDLE-HINGE1">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_HANDLE-HINGE2" type="revolute">
+      <parent link="${name}_BOX_link"/>
+      <child link="${name}_LEFT_link"/>
+      <origin xyz="0 -0.025 0.125" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-3.14159" upper="0" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_HANDLE-HINGE2_trans">
+      <actuator name="${name}_HANDLE-HINGE2_motor"/>
+      <joint name="${name}_HANDLE-HINGE2"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_HANDLE-HINGE2">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+  </macro>
+</robot>

@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xi="http://www.w3.org/2001/XInclude" name="toshiba-clacio-refrigerator">
+  <macro name="toshiba-clacio-refrigerator" params="name parent *origin">
+    <gazebo>
+      <static>false</static>
+    </gazebo>
+    <link name="${name}_ROOT_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/ROOT_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/ROOT_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOT_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET6_link">
+      <visual>
+        <origin xyz="0.275 0.3 0.96" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET6_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.275 0.3 0.96" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET6_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET6_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET3_link">
+      <visual>
+        <origin xyz="-0.015 0 0.577" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET3_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.015 0 0.577" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET3_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET3_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET2_link">
+      <visual>
+        <origin xyz="-0.015 0 0.227" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET2_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.015 0 0.227" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET2_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET2_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET5_link">
+      <visual>
+        <origin xyz="-0.015 0.125 0.852" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET5_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.015 0.125 0.852" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET5_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET5_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET4_link">
+      <visual>
+        <origin xyz="-0.015 -0.203 0.852" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET4_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.015 -0.203 0.852" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://toshiba-clacio-refrigerator/meshes/TOSHIBA-CLACIO-REFRIGERATOR-BODYSET4_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET4_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <joint name="${name}_root_parent_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${name}_ROOT_link"/>
+      <insert_block name="origin"/>
+    </joint>
+    <joint name="${name}_DOOR-UPPER" type="revolute">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET6_link"/>
+      <origin xyz="0.275 0.3 0.96" rpy="0 -0 0 "/>
+      <axis xyz="0 0 1"/>
+      <limit lower="0" upper="1.5708" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_DOOR-UPPER_trans">
+      <actuator name="${name}_DOOR-UPPER_motor"/>
+      <joint name="${name}_DOOR-UPPER"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_DOOR-UPPER">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_DRAWER-LOWER1" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET3_link"/>
+      <origin xyz="-0.015 0 0.577" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.6" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_DRAWER-LOWER1_trans">
+      <actuator name="${name}_DRAWER-LOWER1_motor"/>
+      <joint name="${name}_DRAWER-LOWER1"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_DRAWER-LOWER1">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_DRAWER-LOWER2" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET2_link"/>
+      <origin xyz="-0.015 0 0.227" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.6" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_DRAWER-LOWER2_trans">
+      <actuator name="${name}_DRAWER-LOWER2_motor"/>
+      <joint name="${name}_DRAWER-LOWER2"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_DRAWER-LOWER2">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_DRAWER-MIDDLE-LEFT" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET5_link"/>
+      <origin xyz="-0.015 0.125 0.852" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.6" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_DRAWER-MIDDLE-LEFT_trans">
+      <actuator name="${name}_DRAWER-MIDDLE-LEFT_motor"/>
+      <joint name="${name}_DRAWER-MIDDLE-LEFT"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_DRAWER-MIDDLE-LEFT">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_DRAWER-MIDDLE-RIGHT" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_TOSHIBA-CLACIO-REFRIGERATOR-BODYSET4_link"/>
+      <origin xyz="-0.015 -0.203 0.852" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.6" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_DRAWER-MIDDLE-RIGHT_trans">
+      <actuator name="${name}_DRAWER-MIDDLE-RIGHT_motor"/>
+      <joint name="${name}_DRAWER-MIDDLE-RIGHT"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_DRAWER-MIDDLE-RIGHT">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+  </macro>
+</robot>

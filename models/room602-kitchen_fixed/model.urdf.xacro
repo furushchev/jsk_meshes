@@ -1,0 +1,738 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xi="http://www.w3.org/2001/XInclude" name="room602-kitchen">
+  <macro name="room602-kitchen" params="name parent *origin">
+    <gazebo>
+      <static>false</static>
+    </gazebo>
+    <link name="${name}_ROOT_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOT_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOT_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOT_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET16_link">
+      <visual>
+        <origin xyz="0.34 -0.485 0.73" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET16_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.34 -0.485 0.73" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET16_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET16_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET17_link">
+      <visual>
+        <origin xyz="0.005 0 0" rpy="1.5708 1.5708 -1.5708"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET17_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.005 0 0" rpy="1.5708 1.5708 -1.5708"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET17_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-09" ixy="1.30938e-41" ixz="0" iyy="1e-09" iyz="-4.59177e-41" izz="1e-09"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET17_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET14_link">
+      <visual>
+        <origin xyz="0.34 -0.55 0.75" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET14_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.34 -0.55 0.75" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET14_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET14_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET15_link">
+      <visual>
+        <origin xyz="0.005 0 0" rpy="1.5708 1.5708 -1.5708"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET15_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.005 0 0" rpy="1.5708 1.5708 -1.5708"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET15_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-09" ixy="1.30938e-41" ixz="0" iyy="1e-09" iyz="-4.59177e-41" izz="1e-09"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET15_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET12_link">
+      <visual>
+        <origin xyz="0.34 -0.615 0.73" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET12_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.34 -0.615 0.73" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET12_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET12_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET13_link">
+      <visual>
+        <origin xyz="0.005 0 0" rpy="1.5708 1.5708 -1.5708"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET13_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.005 0 0" rpy="1.5708 1.5708 -1.5708"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET13_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-09" ixy="1.30938e-41" ixz="0" iyy="1e-09" iyz="-4.59177e-41" izz="1e-09"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET13_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET7_link">
+      <visual>
+        <origin xyz="0.025 0.001 0.405" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET7_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.025 0.001 0.405" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET7_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET7_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET10_link">
+      <visual>
+        <origin xyz="0.025 0.006 0.685" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET10_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.025 0.006 0.685" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET10_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET10_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET11_link">
+      <visual>
+        <origin xyz="0.025 -0.805 0.66" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET11_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.025 -0.805 0.66" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET11_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET11_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET2_link">
+      <visual>
+        <origin xyz="0.025 -0.524 0.137" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET2_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.025 -0.524 0.137" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET2_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET2_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET6_link">
+      <visual>
+        <origin xyz="0.025 -0.601 0.405" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET6_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.025 -0.601 0.405" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET6_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET6_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET4_link">
+      <visual>
+        <origin xyz="0.315 -1.123 0.06" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET4_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.315 -1.123 0.06" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET4_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET4_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET9_link">
+      <visual>
+        <origin xyz="0.025 -0.346 0.7" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET9_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.025 -0.346 0.7" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET9_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET9_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET3_link">
+      <visual>
+        <origin xyz="0.025 0.451 0.137" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET3_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.025 0.451 0.137" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET3_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET3_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET8_link">
+      <visual>
+        <origin xyz="0.025 0.603 0.405" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET8_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.025 0.603 0.405" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET8_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET8_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_ROOM602-KITCHEN-BODYSET5_link">
+      <visual>
+        <origin xyz="0.315 1.123 0.06" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET5_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.315 1.123 0.06" rpy="0 -0 0"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/ROOM602-KITCHEN-BODYSET5_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-03" ixy="0" ixz="0" iyy="1e-03" iyz="0" izz="1e-03"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_ROOM602-KITCHEN-BODYSET5_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_TAP-HANDLE-BODY_link">
+      <visual>
+        <origin xyz="-0.0826664 1.11267 1.00531" rpy="1.26878e-07 -0.488693 -0.785399"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/TAP-HANDLE-BODY_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.0826664 1.11267 1.00531" rpy="1.26878e-07 -0.488693 -0.785399"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/TAP-HANDLE-BODY_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-09" ixy="-1.40233e-32" ixz="0" iyy="1e-09" iyz="-9.86076e-32" izz="1e-09"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_TAP-HANDLE-BODY_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <link name="${name}_TAP-TUBE_link">
+      <visual>
+        <origin xyz="-0.09 1.12 0.84" rpy="0 0 -1.5708"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/TAP-TUBE_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="-0.09 1.12 0.84" rpy="0 0 -1.5708"/>
+        <geometry>
+          <mesh filename="model://room602-kitchen/meshes/TAP-TUBE_link_mesh.dae" scale="1 1 1"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.001"/>
+        <origin xyz="0 0 0" rpy="0 -0 0"/>
+        <inertia ixx="1e-09" ixy="-7.4988e-42" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+      </inertial>
+    </link>
+    <gazebo reference="${name}_TAP-TUBE_link">
+      <mu1>0.9</mu1>
+      <mu2>0.9</mu2>
+    </gazebo>
+    <joint name="${name}_root_parent_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="${name}_ROOT_link"/>
+      <insert_block name="origin"/>
+    </joint>
+    <joint name="${name}_BUTTON0-BODY-JOINT-1" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET16_link"/>
+      <origin xyz="0.34 -0.485 0.73" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-0.09" upper="0.09" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_BUTTON0-BODY-JOINT-1_trans">
+      <actuator name="${name}_BUTTON0-BODY-JOINT-1_motor"/>
+      <joint name="${name}_BUTTON0-BODY-JOINT-1"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_BUTTON0-BODY-JOINT-1">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_BUTTON0-BODY-JOINT-2" type="revolute">
+      <parent link="${name}_ROOM602-KITCHEN-BODYSET16_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET17_link"/>
+      <origin xyz="0.005 0 0" rpy="1.5708 1.5708 -1.5708 "/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_BUTTON0-BODY-JOINT-2_trans">
+      <actuator name="${name}_BUTTON0-BODY-JOINT-2_motor"/>
+      <joint name="${name}_BUTTON0-BODY-JOINT-2"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_BUTTON0-BODY-JOINT-2">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_BUTTON1-BODY-JOINT-1" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET14_link"/>
+      <origin xyz="0.34 -0.55 0.75" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-0.09" upper="0.09" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_BUTTON1-BODY-JOINT-1_trans">
+      <actuator name="${name}_BUTTON1-BODY-JOINT-1_motor"/>
+      <joint name="${name}_BUTTON1-BODY-JOINT-1"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_BUTTON1-BODY-JOINT-1">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_BUTTON1-BODY-JOINT-2" type="revolute">
+      <parent link="${name}_ROOM602-KITCHEN-BODYSET14_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET15_link"/>
+      <origin xyz="0.005 0 0" rpy="1.5708 1.5708 -1.5708 "/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_BUTTON1-BODY-JOINT-2_trans">
+      <actuator name="${name}_BUTTON1-BODY-JOINT-2_motor"/>
+      <joint name="${name}_BUTTON1-BODY-JOINT-2"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_BUTTON1-BODY-JOINT-2">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_BUTTON2-BODY-JOINT-1" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET12_link"/>
+      <origin xyz="0.34 -0.615 0.73" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-0.09" upper="0.09" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_BUTTON2-BODY-JOINT-1_trans">
+      <actuator name="${name}_BUTTON2-BODY-JOINT-1_motor"/>
+      <joint name="${name}_BUTTON2-BODY-JOINT-1"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_BUTTON2-BODY-JOINT-1">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_BUTTON2-BODY-JOINT-2" type="revolute">
+      <parent link="${name}_ROOM602-KITCHEN-BODYSET12_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET13_link"/>
+      <origin xyz="0.005 0 0" rpy="1.5708 1.5708 -1.5708 "/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_BUTTON2-BODY-JOINT-2_trans">
+      <actuator name="${name}_BUTTON2-BODY-JOINT-2_motor"/>
+      <joint name="${name}_BUTTON2-BODY-JOINT-2"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_BUTTON2-BODY-JOINT-2">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_CENTER-MIDDLE-DRAWER" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET7_link"/>
+      <origin xyz="0.025 0.001 0.405" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.63" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_CENTER-MIDDLE-DRAWER_trans">
+      <actuator name="${name}_CENTER-MIDDLE-DRAWER_motor"/>
+      <joint name="${name}_CENTER-MIDDLE-DRAWER"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_CENTER-MIDDLE-DRAWER">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_CENTER-TOP-DRAWER" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET10_link"/>
+      <origin xyz="0.025 0.006 0.685" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.63" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_CENTER-TOP-DRAWER_trans">
+      <actuator name="${name}_CENTER-TOP-DRAWER_motor"/>
+      <joint name="${name}_CENTER-TOP-DRAWER"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_CENTER-TOP-DRAWER">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_DRAWER" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET11_link"/>
+      <origin xyz="0.025 -0.805 0.66" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.63" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_DRAWER_trans">
+      <actuator name="${name}_DRAWER_motor"/>
+      <joint name="${name}_DRAWER"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_DRAWER">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_LEFT-BOTTOM-DRAWER" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET2_link"/>
+      <origin xyz="0.025 -0.524 0.137" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.63" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_LEFT-BOTTOM-DRAWER_trans">
+      <actuator name="${name}_LEFT-BOTTOM-DRAWER_motor"/>
+      <joint name="${name}_LEFT-BOTTOM-DRAWER"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_LEFT-BOTTOM-DRAWER">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_LEFT-MIDDLE-DRAWER" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET6_link"/>
+      <origin xyz="0.025 -0.601 0.405" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.63" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_LEFT-MIDDLE-DRAWER_trans">
+      <actuator name="${name}_LEFT-MIDDLE-DRAWER_motor"/>
+      <joint name="${name}_LEFT-MIDDLE-DRAWER"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_LEFT-MIDDLE-DRAWER">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_LEFT-SIDE-DOOR" type="revolute">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET4_link"/>
+      <origin xyz="0.315 -1.123 0.06" rpy="0 -0 0 "/>
+      <axis xyz="0 0 -1"/>
+      <limit lower="0" upper="1.5708" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_LEFT-SIDE-DOOR_trans">
+      <actuator name="${name}_LEFT-SIDE-DOOR_motor"/>
+      <joint name="${name}_LEFT-SIDE-DOOR"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_LEFT-SIDE-DOOR">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_LEFT-TOP-DRAWER" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET9_link"/>
+      <origin xyz="0.025 -0.346 0.7" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.63" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_LEFT-TOP-DRAWER_trans">
+      <actuator name="${name}_LEFT-TOP-DRAWER_motor"/>
+      <joint name="${name}_LEFT-TOP-DRAWER"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_LEFT-TOP-DRAWER">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_RIGHT-BOTTOM-DRAWER" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET3_link"/>
+      <origin xyz="0.025 0.451 0.137" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.63" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_RIGHT-BOTTOM-DRAWER_trans">
+      <actuator name="${name}_RIGHT-BOTTOM-DRAWER_motor"/>
+      <joint name="${name}_RIGHT-BOTTOM-DRAWER"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_RIGHT-BOTTOM-DRAWER">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_RIGHT-MIDDLE-DRAWER" type="prismatic">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET8_link"/>
+      <origin xyz="0.025 0.603 0.405" rpy="0 -0 0 "/>
+      <axis xyz="1 0 0"/>
+      <limit lower="0" upper="0.63" effort="100" velocity="0.01"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_RIGHT-MIDDLE-DRAWER_trans">
+      <actuator name="${name}_RIGHT-MIDDLE-DRAWER_motor"/>
+      <joint name="${name}_RIGHT-MIDDLE-DRAWER"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_RIGHT-MIDDLE-DRAWER">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_RIGHT-SIDE-DOOR" type="revolute">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_ROOM602-KITCHEN-BODYSET5_link"/>
+      <origin xyz="0.315 1.123 0.06" rpy="0 -0 0 "/>
+      <axis xyz="0 0 1"/>
+      <limit lower="0" upper="1.5708" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_RIGHT-SIDE-DOOR_trans">
+      <actuator name="${name}_RIGHT-SIDE-DOOR_motor"/>
+      <joint name="${name}_RIGHT-SIDE-DOOR"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_RIGHT-SIDE-DOOR">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_TAP-HANDLE-JOINT" type="revolute">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_TAP-HANDLE-BODY_link"/>
+      <origin xyz="-0.0826664 1.11267 1.00531" rpy="1.26878e-07 -0.488693 -0.785399 "/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_TAP-HANDLE-JOINT_trans">
+      <actuator name="${name}_TAP-HANDLE-JOINT_motor"/>
+      <joint name="${name}_TAP-HANDLE-JOINT"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_TAP-HANDLE-JOINT">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+    <joint name="${name}_TAP-TUBE-JOINT" type="revolute">
+      <parent link="${name}_ROOT_link"/>
+      <child link="${name}_TAP-TUBE_link"/>
+      <origin xyz="-0.09 1.12 0.84" rpy="0 0 -1.5708 "/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-1.5708" upper="1.5708" effort="100" velocity="0.5"/>
+      <dynamics damping="0.2" friction="0"/>
+    </joint>
+    <transmission type="pr2_mechanism_model/SimpleTransmission" name="${name}_TAP-TUBE-JOINT_trans">
+      <actuator name="${name}_TAP-TUBE-JOINT_motor"/>
+      <joint name="${name}_TAP-TUBE-JOINT"/>
+      <mechanicalReduction>1</mechanicalReduction>
+    </transmission>
+    <gazebo reference="${name}_TAP-TUBE-JOINT">
+      <cfmDamping>0.4</cfmDamping>
+    </gazebo>
+  </macro>
+</robot>
